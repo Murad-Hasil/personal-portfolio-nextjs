@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ThemeToggle } from "./theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
-import { Menu, Github, Linkedin, MessageCircle } from "lucide-react";
+import { Menu, Github, Linkedin, MessageCircle, FileDown } from "lucide-react";
 
 const nav = [
   { href: "#projects", label: "Projects" },
@@ -30,6 +30,14 @@ export function Navbar() {
             </a>
           ))}
           <div className="flex items-center gap-2">
+            {/* Resume Button */}
+            <Link href="/resume.pdf" target="_blank">
+              <Button variant="default" className="rounded-2xl flex items-center gap-2">
+                <FileDown className="h-4 w-4" />
+                Resume
+              </Button>
+            </Link>
+
             <Link
               href="https://github.com/Murad-Hasil"
               target="_blank"
@@ -88,6 +96,15 @@ function MobileMenu() {
               {i.label}
             </a>
           ))}
+
+          {/* Resume Button Mobile */}
+          <Link href="/resume.pdf" target="_blank">
+            <Button className="w-full rounded-2xl">
+              <FileDown className="mr-2 h-4 w-4" />
+              Download Resume
+            </Button>
+          </Link>
+
           <a href="#contact">
             <Button className="w-full rounded-2xl">
               <MessageCircle className="mr-2 h-4 w-4" />

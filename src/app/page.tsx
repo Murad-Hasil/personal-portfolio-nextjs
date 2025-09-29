@@ -7,13 +7,13 @@ import { Contact } from "@/components/contact-section";
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <Hero />
       <Projects />
       <About />
       <Testimonials />
       <Services />
       <Contact />
-    </>
+    </main>
   );
 }

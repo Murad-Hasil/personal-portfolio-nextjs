@@ -24,10 +24,10 @@ export default function Projects() {
               className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden flex flex-col"
             >
               {/* Image */}
-              <div className="relative h-48 w-full overflow-hidden">
+              <div className="relative h-48 w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
                 <Image
-                  src={project.image}
-                  alt={project.title}
+                  src="/project/projects.png"
+                  alt={`Screenshot of ${project.title}`}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -35,8 +35,15 @@ export default function Projects() {
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 mt-3 flex-1">
+                <a
+                  href={project.links.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                </a>
+                <p className="text-gray-700 dark:text-gray-300 mt-3 flex-1">
                   {project.description}
                 </p>
 
@@ -57,6 +64,7 @@ export default function Projects() {
                   <a
                     href={project.links.demo}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400 font-medium hover:underline"
                   >
                     Live Demo <ArrowUpRight className="h-4 w-4" />
@@ -64,7 +72,8 @@ export default function Projects() {
                   <a
                     href={project.links.code}
                     target="_blank"
-                    className="inline-flex items-center gap-1 text-gray-600 dark:text-gray-300 font-medium hover:underline"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-gray-700 dark:text-gray-300 font-medium hover:underline"
                   >
                     <Github className="h-4 w-4" /> Code
                   </a>

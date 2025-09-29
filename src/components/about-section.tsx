@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { FileDown } from "lucide-react";
 
 export default function About() {
   return (
@@ -9,7 +11,7 @@ export default function About() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
-          {/* Profile Image with hover effect */}
+          {/* Profile Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -18,7 +20,7 @@ export default function About() {
           >
             <div className="relative group">
               <Image
-                src="/profile.jpg"
+                src="/profile/profile.jpg"
                 alt="Murad Hasil"
                 width={300}
                 height={300}
@@ -40,31 +42,50 @@ export default function About() {
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Hi, I’m <span className="font-semibold">Murad Hasil</span>, a 
-              passionate <span className="text-blue-500">Web Developer</span> 
-              and <span className="text-purple-500">AI Enthusiast</span>.  
-              I love creating clean, modern, and scalable digital solutions that 
-              not only look good but also solve real problems. With a focus on 
-              <span className="font-semibold"> performance, responsiveness, and user experience</span>, 
-              I turn ideas into impactful web applications.
+              <span className="text-blue-500"> Web Developer</span> and 
+              <span className="text-purple-500"> AI Enthusiast</span>.  
+              I build modern, scalable web solutions that combine clean design 
+              with real business impact.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              When I’m not coding, I explore new technologies, work on 
-              automation projects, and continuously learn to stay ahead in 
-              this fast-paced tech world. My goal is to help businesses and 
-              individuals grow with reliable and smart digital solutions.
+              I focus on <span className="font-semibold">performance, responsiveness, and user experience</span>. 
+              Beyond coding, I explore new technologies, work on automation, and 
+              continuously learn to stay ahead in this fast-moving tech world.
             </p>
-            <div className="flex gap-4">
-              <a
-                href="#contact"
-                className="px-6 py-3 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition"
-              >
-                Hire Me
+
+            {/* Stats */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center mb-8">
+              <div>
+                <p className="text-2xl font-bold">20+</p>
+                <p className="text-sm text-muted-foreground">Projects</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold">15+</p>
+                <p className="text-sm text-muted-foreground">Technologies</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold">20 mo</p>
+                <p className="text-sm text-muted-foreground">Learning</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold">∞</p>
+                <p className="text-sm text-muted-foreground">Curiosity</p>
+              </div>
+            </div>
+
+            {/* Buttons */}
+            <div className="flex flex-wrap gap-4">
+              <a href="#contact">
+                <Button size="lg" className="px-6">Hire Me</Button>
               </a>
-              <a
-                href="#projects"
-                className="px-6 py-3 border border-blue-500 text-blue-500 rounded-xl hover:bg-blue-500 hover:text-white transition"
-              >
-                View Projects
+              <a href="#projects">
+                <Button size="lg" variant="outline" className="px-6">View Projects</Button>
+              </a>
+              <a href="/resume.pdf" target="_blank">
+                <Button size="lg" variant="secondary" className="px-6 flex items-center gap-2">
+                  <FileDown className="h-4 w-4" />
+                  Resume
+                </Button>
               </a>
             </div>
           </motion.div>

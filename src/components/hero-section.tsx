@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="relative flex items-center justify-center min-h-screen overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-950 dark:to-black">
       {/* Background Shapes */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Headline */}
@@ -51,8 +51,6 @@ export default function Hero() {
             speed={50}
             repeat={Infinity}
           />
-
-          {/* Animated underline */}
           <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse rounded-full"></span>
         </motion.div>
 
@@ -63,8 +61,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          I create modern websites, AI-powered chatbots & automation tools to
-          help businesses grow.
+          Building modern websites and AI-powered solutions to help businesses save time and grow faster.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -76,12 +73,12 @@ export default function Hero() {
         >
           <Link href="#contact">
             <Button size="lg" className="px-8">
-              Hire Me
+              Let’s Work Together
             </Button>
           </Link>
           <Link href="#projects">
             <Button size="lg" variant="outline" className="px-8">
-              View Projects
+              See My Work
             </Button>
           </Link>
         </motion.div>
@@ -96,6 +93,7 @@ export default function Hero() {
           <a
             href="https://github.com/Murad-Hasil"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="GitHub"
             className="text-muted-foreground hover:text-foreground transition"
           >
@@ -104,6 +102,7 @@ export default function Hero() {
           <a
             href="https://www.linkedin.com/in/murad-hasil-9044582b9/"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="text-muted-foreground hover:text-foreground transition"
           >

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, px } from "framer-motion";
+import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 import Image from "next/image";
 
@@ -11,25 +11,24 @@ export default function Testimonials() {
       role: "Startup Founder",
       feedback:
         "Working with Murad was an absolute pleasure. He delivered a fast, responsive website that exceeded our expectations.",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      image: "/testimonials/ali.png",
     },
     {
       name: "Sarah Ahmed",
       role: "Business Owner",
       feedback:
         "Professional, reliable, and creative. Murad transformed our idea into a working solution on time and with great attention to detail.",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: "/testimonials/sarah.webp",
     },
     {
       name: "John Doe",
       role: "Freelance Client",
       feedback:
         "His skills in AI and Web Development are impressive. He always goes the extra mile to ensure client satisfaction.",
-      image: "https://randomuser.me/api/portraits/men/85.jpg",
+      image: "/testimonials/john.webp",
     },
   ];
 
-  // Container animation for stagger effect
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -38,7 +37,6 @@ export default function Testimonials() {
     },
   };
 
-  // Each card animation
   const item = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0 },
