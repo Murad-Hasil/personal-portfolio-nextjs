@@ -31,7 +31,7 @@ export function Navbar() {
           ))}
           <div className="flex items-center gap-2">
             {/* Resume Button */}
-            <Link href="/resume.pdf" target="_blank">
+            <Link href="/resume/Murad-Hasil-Resume.pdf" download>
               <Button variant="default" className="rounded-2xl flex items-center gap-2">
                 <FileDown className="h-4 w-4" />
                 Resume
@@ -98,7 +98,7 @@ function MobileMenu() {
           ))}
 
           {/* Resume Button Mobile */}
-          <Link href="/resume.pdf" target="_blank">
+          <Link href="/resume/Murad-Hasil-Resume.pdf" download>
             <Button className="w-full rounded-2xl">
               <FileDown className="mr-2 h-4 w-4" />
               Download Resume

@@ -81,7 +81,7 @@ export default function About() {
               <a href="#projects">
                 <Button size="lg" variant="outline" className="px-6">View Projects</Button>
               </a>
-              <a href="/resume.pdf" target="_blank">
+              <a href="/resume/Murad-Hasil-Resume.pdf" download>
                 <Button size="lg" variant="secondary" className="px-6 flex items-center gap-2">
                   <FileDown className="h-4 w-4" />
                   Resume
