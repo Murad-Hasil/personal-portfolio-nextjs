@@ -20,7 +20,7 @@ export default function About() {
           >
             <div className="relative group">
               <Image
-                src="/profile/profile.jpg"
+                src="/profile/profile.png"
                 alt="Murad Hasil"
                 width={300}
                 height={300}
