@@ -40,17 +40,25 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               About Me
             </h2>
+
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Hi, I’m <span className="font-semibold">Murad Hasil</span>, a 
-              <span className="text-blue-500"> Web Developer</span> and 
-              <span className="text-purple-500"> AI Enthusiast</span>.  
-              I build modern, scalable web solutions that combine clean design 
-              with real business impact.
+              I’m <span className="font-semibold">Murad Hasil</span>, an{" "}
+              <span className="text-blue-500 font-semibold">AI Chatbot Developer</span> and{" "}
+              <span className="text-purple-500 font-semibold">Full-Stack Web Developer</span>.  
+              I create modern, interactive web experiences and conversational AI systems that feel natural and human.  
             </p>
+
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I focus on <span className="font-semibold">performance, responsiveness, and user experience</span>. 
-              Beyond coding, I explore new technologies, work on automation, and 
-              continuously learn to stay ahead in this fast-moving tech world.
+              I specialize in <span className="font-semibold">Next.js, TypeScript, and Tailwind CSS</span>,  
+              integrating the <span className="font-semibold">OpenAI API</span> for real-time conversations and automation workflows.  
+              I’m currently advancing my skills through the{" "}
+              <span className="font-semibold">GIAIC program</span>,  
+              focused on AI-driven and cloud-native development inspired by the PIAIC curriculum.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              My goal is to build scalable, user-focused applications that combine clean design with intelligent functionality —  
+              making technology more personal, helpful, and accessible.
             </p>
 
             {/* Stats */}

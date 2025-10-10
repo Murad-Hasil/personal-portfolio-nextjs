@@ -136,7 +136,7 @@ export function Contact() {
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="https://www.linkedin.com/in/murad-hasil-9044582b9/"
+                href="https://www.linkedin.com/in/muradhasil/"
                 target="_blank"
                 aria-label="LinkedIn"
                 className="text-muted-foreground hover:text-foreground transition"

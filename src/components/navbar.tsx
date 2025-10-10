@@ -48,7 +48,7 @@ export function Navbar() {
               </Button>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/murad-hasil-9044582b9/"
+              href="https://www.linkedin.com/in/muradhasil/"
               target="_blank"
               aria-label="LinkedIn"
             >
