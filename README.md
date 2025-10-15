@@ -1,21 +1,21 @@
-# 🚀 Personal Portfolio - Murad Hasil
+# 🚀 Personal Portfolio – Murad Hasil
 
-This is my personal portfolio project built with **Next.js 14, TypeScript, and Tailwind CSS**.  
-It showcases my skills in **AI chatbot development** and **modern web development**.  
+This is my personal portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**.  
+It highlights my work in **AI Chatbot Development** and **Modern Web Development** — focusing on clean design, interactivity, and performance.
 
-🌐 **Live Demo:** [View Portfolio](https://portfolio-nextjs-woad-gamma.vercel.app/)  
+🌐 **Live Demo:** [portfolio-nextjs-woad-gamma.vercel.app](https://portfolio-nextjs-woad-gamma.vercel.app)
 
 ---
 
 ## ✨ Features
 
-- ⚡ **Modern UI/UX** with Tailwind CSS + shadcn/ui  
+- ⚡ **Modern UI/UX** with Tailwind CSS & shadcn/ui  
 - 🌙 **Dark/Light mode** support  
-- 🎭 **Framer Motion animations**  
-- 📱 **Fully responsive** (mobile-first design)  
-- 📂 **Projects showcase** with cards & hover effects  
-- 🖼️ **Optimized images** using Next.js `<Image />`  
-- 🔍 Smooth scrolling & clean navigation  
+- 🎭 **Smooth Framer Motion animations**  
+- 📱 **Responsive layout** for all devices  
+- 📂 **Project showcase** with hover effects  
+- 🖼️ **Optimized images** via Next.js `<Image />`  
+- 🔍 **Smooth navigation & scrolling experience**
 
 ---
 
@@ -29,22 +29,22 @@ It showcases my skills in **AI chatbot development** and **modern web developmen
 
 ---
 
-## 📌 Future Improvements
+## 🚀 Future Improvements
 
-- Add **contact form** with email integration  
-- Add **blog section** for sharing AI & web dev learnings  
-- Improve **SEO/meta tags** for better search visibility  
-- Add **Google Analytics / Vercel Analytics**  
+- Add contact form with email integration (planned)  
+- Add blog section to share AI & web development learnings  
+- Enhance SEO with structured metadata and Open Graph tags  
+- Integrate Google Analytics or Vercel Analytics for visitor insights  
 
 ---
 
 ## 📬 Contact
 
-- 💼 Fiverr (Coming Soon)  
+- 💼 Fiverr: *(Coming Soon)*  
 - 📧 Email: **mbmuradhasil@gmail.com**  
-- 🌐 Portfolio: [portfolio-nextjs-woad-gamma.vercel.app](https://portfolio-nextjs-woad-gamma.vercel.app/)  
+- 🌐 Portfolio: [portfolio-nextjs-woad-gamma.vercel.app](https://portfolio-nextjs-woad-gamma.vercel.app)
 
 ---
 
 👤 **Author:** Murad Hasil  
-💼 *AI Chatbot Developer | Web Developer*
+💼 *AI Chatbot Developer · Web Developer*

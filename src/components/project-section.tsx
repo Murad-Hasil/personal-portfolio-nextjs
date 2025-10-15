@@ -10,8 +10,12 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20">
       <div className="container">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
+        {/* Section Heading */}
+        <h2 className="text-4xl font-bold text-center mb-12">
+          My Projects
+        </h2>
 
+        {/* Projects Grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 overflow-x-clip">
           {projects.map((project, index) => (
             <motion.div
@@ -21,29 +25,36 @@ export default function Projects() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               whileHover={{ y: -6, scale: 1.02 }}
-              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden flex flex-col"
+              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all overflow-hidden flex flex-col"
             >
-              {/* Image */}
+              {/* Project Image */}
               <div className="relative h-48 w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
                 <Image
-                  src="/project/projects.png"
-                  alt={`Screenshot of ${project.title}`}
+                  src={project.image}
+                  alt={`Preview of ${project.title}`}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={index === 0}
+                  className="object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-1">
+                {/* Title */}
                 <a
                   href={project.links.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline"
+                  className="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
                 >
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <h3 className="text-xl font-semibold tracking-tight">
+                    {project.title}
+                  </h3>
                 </a>
-                <p className="text-gray-700 dark:text-gray-300 mt-3 flex-1">
+
+                {/* Description */}
+                <p className="text-gray-700 dark:text-gray-300 mt-3 flex-1 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -52,7 +63,7 @@ export default function Projects() {
                   {project.tags.map((tag: string, i: number) => (
                     <span
                       key={i}
-                      className="text-xs font-medium bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-md"
+                      className="text-xs font-medium bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-md border border-gray-200 dark:border-gray-700"
                     >
                       {tag}
                     </span>

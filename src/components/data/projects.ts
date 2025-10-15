@@ -1,24 +1,32 @@
+// src/components/data/projects.ts
+
 const projects = [
   {
-    title: "AI Chatbot",
+    title: "AI Chatbot Demo 🤖",
     description:
-      "AI-powered chatbot built with Next.js and GPT APIs to answer real-time queries, designed with memory and context awareness for smarter support.",
-    tags: ["Next.js", "OpenAI", "TailwindCSS"],
-    image: "/project/projects.png",
+      "An interactive AI chatbot built with Next.js, TypeScript, and Tailwind CSS. It connects with the Gemini 2.0 Flash API to generate real-time AI responses with a clean, responsive UI.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Gemini API",
+      "Framer Motion",
+    ],
+    image: "/chatbot-og-image.png",
     links: {
-      demo: "https://demo-chatbot.com",
-      code: "https://github.com/your-repo/chatbot",
+      demo: "https://ai-chatbot-demo-eight.vercel.app",
+      code: "https://github.com/Murad-Hasil/ai-chatbot-demo",
     },
   },
   {
     title: "Portfolio Website",
     description:
-      "Responsive portfolio built with React, Tailwind, and Framer Motion to showcase projects, skills, and resume — optimized for performance and SEO.",
-    tags: ["React", "TailwindCSS", "Framer Motion"],
-    image: "/project/projects.png",
+      "Responsive portfolio built with Next.js, TypeScript, and Tailwind CSS — featuring Framer Motion animations, dark/light mode, and SEO optimization.",
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "SEO"],
+    image: "/portfoliosc.png",
     links: {
-      demo: "https://your-portfolio.com",
-      code: "https://github.com/your-repo/portfolio",
+      demo: "https://portfolio-nextjs-woad-gamma.vercel.app",
+      code: "https://github.com/Murad-Hasil/personal-portfolio-nextjs.git",
     },
   },
   {
