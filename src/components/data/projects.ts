@@ -30,14 +30,14 @@ const projects = [
     },
   },
   {
-    title: "Task Manager App",
+    title: "AI Content Generator ✍️",
     description:
-      "Full-stack task manager with authentication, cloud storage, and real-time updates — built for productivity and collaboration.",
-    tags: ["Next.js", "MongoDB", "TypeScript"],
-    image: "/project/projects.png",
+      "A clean and modern web app that generates high-quality blog posts using the Google Gemini API. Built with Next.js, Tailwind CSS, and TypeScript — fully responsive, SEO optimized, and installable as a PWA.",
+    tags: ["Next.js", "TailwindCSS", "TypeScript", "Gemini API", "PWA"],
+    image: "/ai-content-generator.png",
     links: {
-      demo: "https://demo-taskmanager.com",
-      code: "https://github.com/your-repo/task-manager",
+      demo: "https://ai-content-generator-mu-ten.vercel.app/",
+      code: "https://github.com/Murad-Hasil/ai-content-generator.git",
     },
   },
 ];
