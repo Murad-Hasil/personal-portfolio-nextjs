@@ -3,7 +3,7 @@
 This is my personal portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**.  
 It highlights my work in **AI Chatbot Development** and **Modern Web Development** — focusing on clean design, interactivity, and performance.
 
-🌐 **Live Demo:** [portfolio-nextjs-woad-gamma.vercel.app](https://portfolio-nextjs-woad-gamma.vercel.app)
+🌐 **Live Demo:** [Check out my portfolio here](https://portfolio-nextjs-woad-gamma.vercel.app)
 
 ---
 
@@ -42,7 +42,7 @@ It highlights my work in **AI Chatbot Development** and **Modern Web Development
 
 - 💼 Fiverr: *(Coming Soon)*  
 - 📧 Email: **mbmuradhasil@gmail.com**  
-- 🌐 Portfolio: [portfolio-nextjs-woad-gamma.vercel.app](https://portfolio-nextjs-woad-gamma.vercel.app)
+- 🌐 Portfolio: [Explore the Live Demo](https://portfolio-nextjs-woad-gamma.vercel.app)
 
 ---
 
