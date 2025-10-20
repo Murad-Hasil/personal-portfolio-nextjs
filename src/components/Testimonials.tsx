@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 import Image from "next/image";
 
+/**
+ * Testimonials Section
+ * ----------------------
+ * - Displays client feedback in elegant glass-style cards
+ * - Adapts smoothly to both light and dark themes
+ * - Uses subtle motion for a refined professional feel
+ */
 export default function Testimonials() {
   const testimonials = [
     {
@@ -29,6 +36,7 @@ export default function Testimonials() {
     },
   ];
 
+  // Animation settings for smooth reveal and staggered entry
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -45,16 +53,18 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-20 bg-background">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        {/* Section Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent"
         >
           What Clients Say
         </motion.h2>
 
+        {/* Testimonials Grid */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -68,10 +78,12 @@ export default function Testimonials() {
               variants={item}
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 200, damping: 15 }}
-              className="p-6 rounded-2xl shadow-lg bg-muted/50 text-center hover:shadow-xl transition"
+              className="p-6 rounded-2xl bg-gradient-to-b from-background/60 via-background/40 to-background/60 dark:from-white/10 dark:via-white/5 dark:to-white/10 backdrop-blur-md border border-white/10 shadow-lg hover:shadow-xl transition"
             >
               <Quote className="h-8 w-8 text-blue-500 mx-auto mb-4" />
               <p className="text-muted-foreground mb-6 italic">“{t.feedback}”</p>
+
+              {/* Client Info */}
               <div className="flex flex-col items-center">
                 <Image
                   src={t.image}

@@ -1,9 +1,9 @@
-import Hero from "@/components/hero-section";
-import Projects from "@/components/project-section";
-import About from "@/components/about-section";
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
-import { Services } from "@/components/services-section";
-import { Contact } from "@/components/contact-section";
+import { Services } from "@/components/Services";
+import { Contact } from "@/components/Contact";
 
 export default function HomePage() {
   return (

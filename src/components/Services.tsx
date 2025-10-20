@@ -5,6 +5,7 @@ import { Code, Bot, Layout, Palette } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function Services() {
+  // Service list — cleanly structured for easy updates or expansion later
   const services = [
     {
       title: "Web Development",
@@ -35,14 +36,17 @@ export function Services() {
   return (
     <section id="services" className="py-20 bg-muted/50">
       <div className="max-w-6xl mx-auto text-center mb-12 px-6">
+        {/* Section heading with subtle gradient for visual hierarchy */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold mb-4"
+          className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
         >
           My Services
         </motion.h2>
+
+        {/* Supporting text with balanced tone */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,6 +58,7 @@ export function Services() {
         </motion.p>
       </div>
 
+      {/* Services grid */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
         {services.map((service, index) => (
           <motion.div
@@ -62,17 +67,23 @@ export function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <Card className="group hover:shadow-xl transition rounded-2xl border-border">
+            {/* Card uses subtle glass effect — clean, modern, and lightweight */}
+            <Card className="group hover:shadow-lg transition-all rounded-2xl border border-border bg-background/60 backdrop-blur-sm hover:border-blue-500/40">
               <CardHeader className="flex flex-col items-center space-y-4">
-                <div className="bg-background p-4 rounded-full shadow-md group-hover:scale-110 transition">
+                {/* Icon area — themed background with hover glow */}
+                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-4 rounded-full shadow-sm group-hover:from-blue-500/20 group-hover:to-purple-500/20 transition">
                   {service.icon}
                 </div>
+
+                {/* Title */}
                 <CardTitle className="text-xl font-semibold text-center">
                   {service.title}
                 </CardTitle>
               </CardHeader>
+
+              {/* Description */}
               <CardContent>
-                <p className="text-muted-foreground text-center">
+                <p className="text-muted-foreground text-center leading-relaxed">
                   {service.description}
                 </p>
               </CardContent>
@@ -81,7 +92,7 @@ export function Services() {
         ))}
       </div>
 
-      {/* Animated CTA under services */}
+      {/* CTA line under services */}
       <motion.p
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +100,10 @@ export function Services() {
         className="text-center text-muted-foreground mt-12 text-lg"
       >
         Interested in any of these services? Scroll down to{" "}
-        <span className="font-semibold text-blue-500">get in touch</span>.
+        <span className="font-semibold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+          get in touch
+        </span>
+        .
       </motion.p>
     </section>
   );

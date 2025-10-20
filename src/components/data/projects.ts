@@ -1,5 +1,3 @@
-// src/components/data/projects.ts
-
 const projects = [
   {
     title: "AI Chatbot Demo 🤖",
@@ -12,7 +10,7 @@ const projects = [
       "Gemini API",
       "Framer Motion",
     ],
-    image: "/chatbot-og-image.png",
+    image: "/project/chatbot.png",
     links: {
       demo: "https://ai-chatbot-demo-eight.vercel.app",
       code: "https://github.com/Murad-Hasil/ai-chatbot-demo",
@@ -23,7 +21,7 @@ const projects = [
     description:
       "Responsive portfolio built with Next.js, TypeScript, and Tailwind CSS — featuring Framer Motion animations, dark/light mode, and SEO optimization.",
     tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "SEO"],
-    image: "/portfoliosc.png",
+    image: "/project/portfolio.png",
     links: {
       demo: "https://portfolio-nextjs-woad-gamma.vercel.app",
       code: "https://github.com/Murad-Hasil/personal-portfolio-nextjs.git",
@@ -34,7 +32,7 @@ const projects = [
     description:
       "A clean and modern web app that generates high-quality blog posts using the Google Gemini API. Built with Next.js, Tailwind CSS, and TypeScript — fully responsive, SEO optimized, and installable as a PWA.",
     tags: ["Next.js", "TailwindCSS", "TypeScript", "Gemini API", "PWA"],
-    image: "/ai-content-generator.png",
+    image: "/project/ai-content-generator.png",
     links: {
       demo: "https://ai-content-generator-mu-ten.vercel.app/",
       code: "https://github.com/Murad-Hasil/ai-content-generator.git",
