@@ -51,7 +51,11 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-background">
+    <section
+      id="testimonials"
+      aria-label="Client testimonials"
+      className="py-20 bg-background"
+    >
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Section Heading */}
         <motion.h2
@@ -87,10 +91,14 @@ export default function Testimonials() {
               <div className="flex flex-col items-center">
                 <Image
                   src={t.image}
-                  alt={t.name}
+                  alt={`Photo of ${t.name}, ${t.role}`}
                   width={56}
                   height={56}
                   className="h-14 w-14 rounded-full object-cover border-2 border-blue-500 mb-3"
+                  // Added optional fallback in case the image fails
+                  onError={(e) =>
+                    (e.currentTarget.src = "/testimonials/default.png")
+                  } // Optional fallback
                 />
                 <h4 className="font-semibold text-foreground">{t.name}</h4>
                 <p className="text-sm text-muted-foreground">{t.role}</p>

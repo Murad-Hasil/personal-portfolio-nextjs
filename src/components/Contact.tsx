@@ -9,7 +9,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, MessageCircle, Mail, MapPin } from "lucide-react";
 
 export function Contact() {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
 
   // Handles the form submission using Formspree
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -53,7 +55,8 @@ export function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted-foreground text-lg max-w-2xl mx-auto"
           >
-            Let’s build something great together — share your project details and I’ll respond within 24 hours.
+            Let’s build something great together — share your project details
+            and I’ll respond within 24 hours.
           </motion.p>
         </div>
 
@@ -67,7 +70,9 @@ export function Contact() {
           >
             <Card className="rounded-3xl backdrop-blur-md bg-background/60 border border-border shadow-sm hover:shadow-md transition">
               <CardHeader>
-                <CardTitle className="text-2xl font-semibold">Contact Details</CardTitle>
+                <CardTitle className="text-2xl font-semibold">
+                  Contact Details
+                </CardTitle>
               </CardHeader>
 
               <CardContent className="space-y-6">
@@ -138,9 +143,14 @@ export function Contact() {
               </CardHeader>
 
               <CardContent>
-                <form onSubmit={handleSubmit} className="grid gap-4">
+                <form
+                  onSubmit={handleSubmit}
+                  aria-label="Contact form for project inquiries"
+                  className="grid gap-4"
+                >
                   <Input
                     name="name"
+                    type="text"
                     placeholder="Your Name"
                     required
                     className="rounded-2xl"
@@ -154,6 +164,7 @@ export function Contact() {
                   />
                   <Input
                     name="subject"
+                    type="text"
                     placeholder="Subject"
                     required
                     className="rounded-2xl"

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://portfolio-nextjs-woad-gamma.vercel.app/",
+  siteUrl: "https://personal-portfolio-nextjs-ebon.vercel.app/",
   generateRobotsTxt: true,
   sitemapSize: 5000,
   exclude: ["/404"],

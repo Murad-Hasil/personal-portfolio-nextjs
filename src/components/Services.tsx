@@ -34,7 +34,11 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-muted/50">
+    <section
+      id="services"
+      aria-label="List of professional services offered"
+      className="py-20 bg-muted/50"
+    >
       <div className="max-w-6xl mx-auto text-center mb-12 px-6">
         {/* Section heading with subtle gradient for visual hierarchy */}
         <motion.h2

@@ -42,19 +42,40 @@ export function Footer() {
 
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-6 text-sm">
-          <Link href="/" className="hover:text-foreground transition">
+          <Link
+            href="/"
+            aria-label="Navigate to Home section"
+            prefetch={false}
+            className="hover:text-foreground transition"
+          >
             Home
           </Link>
-          <a href="#about" className="hover:text-foreground transition">
+          <a
+            href="#about"
+            aria-label="Navigate to About section"
+            className="hover:text-foreground transition"
+          >
             About
           </a>
-          <a href="#projects" className="hover:text-foreground transition">
+          <a
+            href="#projects"
+            aria-label="Navigate to Projects section"
+            className="hover:text-foreground transition"
+          >
             Projects
           </a>
-          <a href="#services" className="hover:text-foreground transition">
+          <a
+            href="#services"
+            aria-label="Navigate to Services section"
+            className="hover:text-foreground transition"
+          >
             Services
           </a>
-          <a href="#contact" className="hover:text-foreground transition">
+          <a
+            href="#contact"
+            aria-label="Navigate to Contact section"
+            className="hover:text-foreground transition"
+          >
             Contact
           </a>
         </nav>
@@ -64,7 +85,7 @@ export function Footer() {
           <a
             href="https://github.com/Murad-Hasil"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             aria-label="GitHub"
             className="hover:text-foreground transition"
           >
@@ -73,7 +94,7 @@ export function Footer() {
           <a
             href="https://www.linkedin.com/in/muradhasil/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             aria-label="LinkedIn"
             className="hover:text-foreground transition"
           >
@@ -82,7 +103,7 @@ export function Footer() {
           <a
             href="https://wa.me/923142241393"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             aria-label="WhatsApp"
             className="hover:text-foreground transition"
           >
@@ -106,6 +127,8 @@ export function Footer() {
             key="scroll-button"
             onClick={scrollToTop}
             aria-label="Scroll to top"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}

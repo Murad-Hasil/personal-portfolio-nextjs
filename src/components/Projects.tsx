@@ -109,6 +109,7 @@ export default function Projects() {
                     href={project.links.demo}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`View live demo of ${project.title}`}
                     className="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400 font-medium hover:underline"
                   >
                     Live Demo <ArrowUpRight className="h-4 w-4" />
@@ -117,6 +118,7 @@ export default function Projects() {
                     href={project.links.code}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`View source code of ${project.title}`}
                     className="inline-flex items-center gap-1 text-gray-700 dark:text-gray-300 font-medium hover:underline"
                   >
                     <Github className="h-4 w-4" /> Code

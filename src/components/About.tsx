@@ -20,7 +20,7 @@ export default function About() {
             <div className="relative group w-[240px] h-[240px] md:w-[300px] md:h-[300px]">
               <Image
                 src="/profile/profile.png"
-                alt="Murad Hasil"
+                alt="Portrait of Murad Hasil – AI Chatbot and Full-Stack Web Developer"
                 fill
                 priority
                 sizes="(max-width: 768px) 240px, (max-width: 1024px) 300px, 300px"
@@ -83,7 +83,7 @@ export default function About() {
               {[
                 { value: "20+", label: "Projects" },
                 { value: "15+", label: "Technologies" },
-                { value: "20 mo", label: "Learning" },
+                { value: "20 Mo", label: "Learning" },
                 { value: "∞", label: "Curiosity" },
               ].map((item, i) => (
                 <div key={i}>
@@ -95,17 +95,17 @@ export default function About() {
 
             {/* ===== Action Buttons ===== */}
             <div className="flex flex-wrap gap-4">
-              <a href="#contact">
+              <a href="#contact" aria-label="Hire Murad Hasil">
                 <Button size="lg" className="px-6">
                   Hire Me
                 </Button>
               </a>
-              <a href="#projects">
+              <a href="#projects" aria-label="View Murad Hasil's projects">
                 <Button size="lg" variant="outline" className="px-6">
                   View Projects
                 </Button>
               </a>
-              <a href="/resume/Murad-Hasil-Resume.pdf" download>
+              <a href="/resume/Murad-Hasil-Resume.pdf" download aria-label="Download Murad Hasil's resume">
                 <Button
                   size="lg"
                   variant="secondary"

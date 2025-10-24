@@ -36,7 +36,7 @@ export default function Hero() {
       <motion.div
         aria-hidden="true"
         className="absolute inset-0 bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))]
-        from-indigo-900 via-purple-900 to-blue-900 opacity-20 blur-3xl"
+        from-indigo-900 via-purple-900 to-blue-900 opacity-15 blur-xl"
         animate={{ rotate: 360 }}
         transition={{
           repeat: Infinity,
