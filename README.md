@@ -15,13 +15,15 @@ It showcases my work in **AI Chatbot Development** and **Modern Web Development*
 - 📱 **Fully responsive layout** across all devices    
 - 💬 **Functional contact form** with Formspree integration  
 - 🧭 **Smooth scrolling & section navigation**  
-- 🪄 **Optimized performance** and **SEO-ready** structure
+- 🪄 **Optimized performance** and **SEO-ready** structure  
+- 🧩 **Project case study pages** – each project has its own detailed page
+- 🧱 **Reusable components & centralized styles** for maintainable code
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 14  
+- **Framework:** Next.js 15 (App Router)  
 - **Language:** TypeScript  
 - **Styling:** Tailwind CSS + shadcn/ui  
 - **Animations:** Framer Motion  
@@ -30,11 +32,22 @@ It showcases my work in **AI Chatbot Development** and **Modern Web Development*
 
 ---
 
+## 📁 Project Structure 
+
+- `src/components/data/projects.ts` → All project data (typed for safety)  
+- `src/app/projects/[slug]/page.tsx` → Dynamic case study pages  
+- `src/components/common/Section.tsx` → Reusable section component  
+- `src/lib/styles.ts` → Centralized UI style tokens  
+
+---
+
 ## 🚀 Future Improvements
  
-- Add blog section to share AI & web development learnings  
-- Add project detail pages (case study style)  
-- Integrate analytics for visitor tracking (Google or Vercel Analytics)  
+- 🤖 Add an **AI Agent** to the portfolio that answers visitors’ questions about me, my skills, and my projects  
+- 🧠 Integrate custom **AI agents** using the OpenAI API and Model Context Protocol  
+- 📰 Add a **blog section** to share AI and web development insights
+- 📊 Add **analytics** for visitor tracking (Google Analytics or Vercel Analytics) 
+- 💾 Enable **chat history and conversation context** within the built-in AI agent  
 
 ---
 
